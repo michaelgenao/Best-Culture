@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+   
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+    color: #D46A6A
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+
+.copy {
+    font-size: 20px;
+}
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #AA3939;
+    text-decoration: none;
+}
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #D46A6A
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height:100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #0B1218;
+}
+
+#banner h2 {
+    font-size: 28px;
+   color: #0B1218
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover {
+    background:#AA3939;
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px;
+    }
+    
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { 
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    #banner img {
+        height: auto;
+        margin-top: relative;
+		
+    }
+}
+
+@media (min-width:1024px) { 
+    #banner img {
+        margin-top: -200px;
+    }
+}
+
+#info {
+    background: #333;
+    color: #D46A6A;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-show {
+    margin: 20px;
+}
+
+.info-show img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+   
+}
+
+@media (min-width:480px) {
+    .info-pet {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .info-pet {
+        width: auto;
+    }
+}
+#menu-bar {
+    display: none;
+    color: #D46A6A
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+   color: #D46A6A
+    transition all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+    background: rgba(black);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+		color:#AA3939
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+#imagenflotante{
+margin:10px auto;
+display:block;
+}
+}
+</style>
+	<header>
+   <div class="contenedor">
+        <h1 class="texto">Noticias</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/best%20culture.html">Inicio</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/moda.html">Moda</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/tips%20de%20belleza.html">Tips de belleza</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/farandula.html">Farándula</a>
+                </nav>
+            </div>
+			</header>
+			<br>
+			<br>
+			<br>
+			<br>
+			<body>
+                 <br> 
+                <h1>
+                <p>
+			En los últimos tiempos Sur Corea ha sido uno de los puntos de atención no solo por el increible talento musical que poseen sus artistas,
+			si no por las polémicas que han surgido de dicho país, ya que al estar al lado de uno de los países más problemáticos del mundo y ser una
+			nación totalmente diferente a la otra haciendo que las personas se fijaran en esta ya sea para comparar el nivel de armas, educación, alimentación,
+			entre otras cosas más. </h1> 
+                </br>
+            <br>
+            <h3>A continuación las últimas noticias más picantes de Corea del Sur de manera rápida:</h3>
+                </br>    
+            </p>
+			<h2>
+			1.¿Adiós a las armas?
+			</h2>
+            <br>
+            <p>
+			"El lugar más peligroso del mundo" así lo denominó Bill Clynton en 1993 presidente de los Estados Unidos a Panmunjom único lugar de los 
+			250 kilómetros de toda la frontera donde los soldados del norte y del sur se ven las caras, en este lugar se dió paro a la guerra entre las
+            dos Coreas (1950-1953), en donde los presidentes de ambas Coreas saltaron el muro en abril de este año como gesto de unión y paz.
+			</p><br>
+			<br>
+			<img src="C:\Users\Estudiante\Desktop\Best culture\noticia1.jpg" width="800" id="imagenflotante">
+			<br>
+			<br>
+			<h2>
+			2.El cine coreano exhibe su fortaleza en Madrid.
+			</h2>
+           <br>
+            <p>
+                El festival sobre la industria fílmica del país asiático abre mañana su 11ª edición.
+	        </p>
+            <br>
+                <P>
+                    La undécima edición del Festival de Cine Coreano comienza mañana en el Palacio de la
+                     Prensa de Madrid (plaza de Callao, 4) con un cartel formado por seis películas que se
+                      exhibirán en distintos horarios hasta el próximo 2 de septiembre a un precio de cuatro
+                       euros por sesión. A cambio de 10 euros, los aficionados tienen a su alcance un abono
+                        para tres proyecciones. 
+                </P>  
+            </br>
+           
+        <p>
+            El evento, organizado por la Embajada de Corea en colaboración con la Filmoteca Española y la 
+            Korean Film Council, pretende dar visibilidad a una industria estratégica para el país asiático
+             que en los últimos años ha ganado visibilidad en certámenes internacionales.
+        </p>
+        <br>
+        <p>
+            The Vanished (2018), la cinta que mañana inaugura el festival a las 20.00 es la más taquillera
+             de este año en Corea. Su director, Lee Chang-hee, es uno de los creadores más destacados del 
+             género.
+
+            Este año, el festival se divide en tres secciones: Thrillers, Éxitos de Taquilla y Las dos 
+            Coreas y ofrecerá los largometrajes: Hide and Seek (2013), Asesinos (2015), Tren a Busan (2016),
+             Lazos de guerra (2004) y On the Pitch (2010). Tanto Asesinos como Tren a Busan fueron dos éxitos
+              de público en sus años de estreno. La segunda es una referencia para los amantes de las películas
+               de zombis, se alzó con los premios a mejor director y mejores efectos visuales del Festival de 
+               Sitges. Está considerada como el mayor fenómeno cinematográfico de Corea del Sur.
+        </p>
+    </br>   
+    <img src="C:\Users\Estudiante\Desktop\Best culture\cine_coreano.jpg" width="800" id="imagenflotante">
+		
+    <br>
+    <h2>
+    3.Las autoridades de Corea del Sur comprobarán los WC públicos de Seúl a diario en busca de cámaras ocultas.
+    </h2>
+   <br>
+    <p>
+        El país sufre cerca de 6.000 denuncias anuales (el 80% de mujeres) por grabaciones ilegales colgadas 
+        en sitios web porno.
+    </p>
+    <br>
+        <P>
+            Con cerca de 6.000 casos anuales denunciados a la policía, las autoridades de Seúl se proponen 
+            acabar con las cámaras ocultas que se colocan en WC públicos, gimnasios, piscinas o probadores de
+             tiendas. No es sencillo, pues en ocasiones los perpetradores instalan y desinstalan las cámaras en
+              cuestión de minutos, tras lograr capturar imágenes que después cuelgan en sitios web porno.
+               El problema en Corea del Sur es de tal magnitud que a mediados de agosto, decenas de miles de 
+               personas, la mayoría de ellas mujeres (el 80% de las víctimas que denuncian son chicas), se 
+               echaron a la calle para pedir responsabilidades bajo el lema "Mi vida no es tu porno". Y es que 
+               en los últimos años se han multiplicado los casos (de 1.354 en 2011 a 5.363 en 2017), a medida 
+               que la tecnología permite que cámaras más pequeñas y casi indetectables se cuelen en lugares 
+               íntimos y graben lo que no deben.
+        </P>  
+    </br>
+   
+<p>
+    Así, según la agencia de noticias surcoreana Yonhap, Seúl, que actualmente cuenta con 50 trabajadores 
+    que se dedican en exclusiva a vigilar este asunto en más de 20.000 váteres públicos, ha decidido que 
+    los 8.000 empleados que cuidan de la limpieza y el mantenimiento de los baños pasen a tener una tarea
+     adicional en busca de cámaras. Con esta medida se pretende incrementar drásticamente la vigilancia y 
+     que cada trabajador compruebe una media de 2,5 WC diarios. Además, bajo la lupa estarán 1.000 WC, los 
+     que más denuncias acumulan en la policía.
+</p>
+<br>
+<p>
+        Curiosamente, los 50 empleados que tratan de encontrar cámaras ocultas no han localizado ninguna 
+        en los últimos dos años, lo que lleva a pensar que los ladrones de imágenes utilizan sobre todo 
+        teléfonos móviles. Según las estadísticas del gobierno surcoreano, solo el 9% de aquellos a 
+        quienes la policía ha detenido grabando imágenes han sido metidos en prisión, un dato que ha 
+        merecido también las críticas de las autoridades, que reclaman mano dura con los perpetradores.
+</p>
+</br>   
+<img src="C:\Users\Estudiante\Desktop\Best culture\noticia3.jpg" width="800" id="imagenflotante">
+   
+<br>
+    <h2>
+           4.Seúl se prepara para la cumbre del G20.
+    </h2>
+   <br>
+    <h5>
+        <p>
+                Las horas están contadas para el inicio de la quinta cumbre del G20 en Seúl, que llega 
+                cargada de polémica. Las principales economías del mundo se darán cita este jueves y 
+                viernes en Corea del Sur.   
+        </p>
+    </h5>
+   
+    <br>
+        <P>
+                La cumbre se realiza en un país asiático, concretamente en Corea del Sur, quien 
+                hasta ahora parecía mantenerse en un segundo plano, pero cuyo avance y potencial 
+                tecnológico le hace situarse en la vanguardia de las primeras potencias.
+
+                Los dirigentes de las principales economías del mundo se dan cita este jueves y
+                 viernes en Seúl.
+        </P>  
+    </br>
+   
+    <p>
+            La reunión llega en plena guerra de divisas entre EE. UU. y algunos de los denominados países 
+            emergentes, y sobre la mesa de negociación aparecen tres puntos bastante definidos: El primero
+             de ellos, conseguir un acuerdo para reducir los desequilibrios comerciales; el segundo, poner
+              fin a la guerra de divisas, y el tercero, aprobar o no la reforma del sistema financiero mundial.            
+      </p>
+<br>
+       <p>
+        La cumbre paralizará el sur de la capital con la presencia de 50.000 policías en alerta máxima 
+        ante las protestas de los diferentes grupos antisistema que desde inicios de semana llevan en la 
+        capital coreana con la intención de hacerse notar.     
+          </p>
+</br>   
+<img src="C:\Users\Estudiante\Desktop\Best culture\noticia4.jpg" width="800" id="imagenflotante">
+   
+<br>
+
+<h2>
+       5.Corea del Sur y Estados Unidos reanudan sus maniobras militares.
+</h2>
+<br>
+<h5>
+    <p>
+            Los ejercicios combinados entre los dos cuerpos de infantería de marina se habían 
+            suspendido tras el encuentro de Trump con Kim Jong-un en Singapur.
+    </p>
+</h5>
+
+<br>
+    <P>
+            
+        Corea del Sur y Estados Unidos reanudaron este lunes unas maniobras militares a pequeña escala que
+        habían sido suspendidas tras la histórica cumbre entre el presidente estadounidense Donald Trump y 
+        el líder norcoreano Kim Jong Un.
+
+        Los ejercicios combinados entre los dos cuerpos de infantería de marina formaban parte de una "selección"
+        de maniobras aplazadas en junio con motivo de la reunión de Singapur, cuando Trump prometió cesar estos 
+        ejercicios onerosos y considerados provocadores por el Norte.
+
+        Este lunes se reanudó el Programa Surcoreano de Intercambio de Marines (KMEP), en el que participan unos 
+        500 infantes de marina surcoreanos y estadounidenses, para una duración de dos semanas en Pohang, en el 
+        sur del país, declaró una portavoz del ministerio surcoreano de Defensa.
+    </P>  
+</br>
+
+    <p>
+            "Habíamos dicho anteriormente que llevaríamos a cabo, como estaba previsto, ejercicios a 
+            pequeña escala o a nivel de batallones entre Estados Unidos y Corea del Sur", dijo 
+            Choi Hyun-soo.
+
+            Washington tiene 28.500 soldados desplegados en Corea del Sur para protegerla de su vecina del
+             Norte, dotado del arma atómica.
+            
+            Durante mucho tiempo los dos países llevaron a cabo ejercicios conjuntos calificados meramente
+             defensivos, aunque Pyongyang los consideraba como el ensayo de la invasión de su territorio.
+            
+            Además de estos ejercicios, en agosto se suspendieron también las maniobras anuales Ulchi Freedom 
+            Guardian, en las que participan decenas de miles de soldados. Los ejercicios aéreos Vigilant Ace 
+            previstos para diciembre también fueron postergados.
+            
+            El secretario de Estado Norteamericano, Mike Pompeo, debe reunirse próximamente con su homólogo 
+            Norcoreano para hablar de desnuclearización y de una segunda cumbre entre Washington y Pyongyang. 
+      </p>
+<br>
+   <p>
+        En Singapur, Kim y Trump firmaron una declaración vaga sobre la desnuclearización pero desde 
+        entonces las negociaciones no han progresado demasiado.
+
+        Estados Unidos, que lideró los esfuerzos internacionales realizados en 2017 para hacer presión 
+        sobre la economía norcoreana, rechaza un alivio de las sanciones hasta que Pyongyang no haya 
+        procedido a una "desnuclearización final y totalmente comprobada".
+        
+        Pyongyang condenó los "métodos de gánster" de los estadounidenses acusados de exigir su desarme 
+        unilateral sin hacer concesiones.
+        
+        El Ministro Norcoreano de Relaciones Exteriores amenazó el viernes a Estados Unidos con retomar el 
+        desarrollo de armas nucleares si no le levantan las sanciones económicas.    
+      </p>
+</br>   
+<img src="C:\Users\Estudiante\Desktop\Best culture\noticia5.jpg" width="800" id="imagenflotante">
+
+
+<br>
+		
+<h4>Created by: Rosse Camila De León y Michael Genao<h4>
+          <div class="sociales">
+            <a class="fontawesome-facebook-sign" href="https://www.facebook.com/Best-culture-1882030031913670/?modal=admin_todo_tour"></a>
+            <a class="fontawesome-twitter" href="https://twitter.com/?lang=en"></a>
+            <a class="fontawesome-camera-retro" href="https://www.instagram.com/best_culture/?hl=es-la"></a>
+        </div>       
+    
+      
+
+
+
+</body>
+	
+</html>

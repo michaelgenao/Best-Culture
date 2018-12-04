@@ -1,0 +1,490 @@
+<!Doctype html>
+<html>    
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+   
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+    color: #D46A6A
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+
+.copy {
+    font-size: 20px;
+}
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #AA3939;
+    text-decoration: none;
+}
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #D46A6A
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height:100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #0B1218;
+}
+
+#banner h2 {
+    font-size: 28px;
+   color: #0B1218
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover {
+    background:#AA3939;
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px;
+    }
+    
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { 
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    #banner img {
+        height: auto;
+        margin-top: relative;
+		
+    }
+}
+
+@media (min-width:1024px) { 
+    #banner img {
+        margin-top: -200px;
+    }
+}
+
+#info {
+    background: #333;
+    color: #D46A6A;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-show {
+    margin: 20px;
+}
+
+.info-show img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+   
+}
+
+@media (min-width:480px) {
+    .info-pet {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .info-pet {
+        width: auto;
+    }
+}
+#menu-bar {
+    display: none;
+    color: #D46A6A
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+   color: #D46A6A
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+    background: rgba(black);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+		color:#AA3939
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+#imagenflotante{
+margin:10px auto;
+display:block;
+}
+#arreglo{
+responsive
+}
+}
+ 
+</style>           
+		<header>
+   <div class="contenedor">
+        <h1 class="texto">Farándula</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/best%20culture.html">Inicio</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/moda.html">Moda</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/tips%20de%20belleza.html">Tips de belleza</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/Noticias.html">Noticias</a>
+                </nav>
+            </div>
+			</header><br>
+			<br>
+			<br>
+			<br>
+   <body>
+<p>
+   <strong>Corea es conocida como unas de las capitales del mundo con respecto a farándulas, gracias a al gran número de agencias encargadas de la habilitación de jóvenes, muchos de  ellos empienzan en las agencias , mucho antes de empezar la escuela inicial y otros desde el inicio de la adolescencia para ser entrenados en modelaje, canto, baile y actuación.</strong> <br>
+<br>
+   Después de conocer eso, comencemos a hablar sobre las novedades del momento del mundo del espectáculo.<br>
+
+<br>
+    </p>
+
+    <h3>1. El escándalo de la Cube Entertaiment y Hyuna:</h3>
+    <br>
+
+    <p id="imagenflotante">
+        La cantante Kim Hyun-a conocida como Hyuna en el mundo artístisco, la cual está involucrada en un gran escándalo , gracias a que esta llevaba 2 años de relación con E' Dawn integrante del grupo  de la misma agencia Pentagon creando revuelo por las fans de dicho grupo, las cuales hicieron comentarios como "Esa chica se le entro por los ojos al pobre E'Dawn" poniendo a Hyuna en una posición de chica mala o seductora y a E'Dawn como un joven totalmente inocente. La reacción de la compañía sobre esto fue la esperada ya que ambos artistas rompieron su contrato ya que las relaciones amorosas estan prohibidas en las empresas del medio, la empresa vió la posibilidad de sacar a estos artistas de la empresa, pero se vieron obligados a no hacerlo , ya que si lo hacian sus acciones caerian tanto para tener que cerrar la compañía .
+    </p>
+   <img src="C:\Users\Estudiante\Desktop\Best culture\escandalo de Hyuna.jpg" width="400" id="imagenflotante"><br>
+<br> 
+
+<h3>2. Todo BTS nominados en los rostros más bellos del mundo: </h3>
+<p>
+    La TC clander, encargada de realizar de manera anual las nominaciones de 150 personas tanto del género femenino como masculino, las nominaciones las puede hacer el público mediante las distintas redes sociales, pero la TC clander se fija que tenga los estatutos de belleza correspondientes para ser nominados, para luego ser depurados donde se eliminaran 50 rostros y ganaran 100, pero solo el primer lugar se lleva la gloria, V integrante de BTS fue el ganador del año pasado, esta lista será publicada a finales de 2018 .
+</p><br>
+
+<br>
+<img src="C:\Users\Estudiante\Desktop\Best culture\bts.jpg" width="400" id="imagenflotante"><br>
+<br>
+<h3>3. Se reporta que debutará otro grupo femenino de JYP, pero solo con integrantes japonesas:</h3>
+<br>
+<p>
+    JYP una reconocida agencia de kpop especializada mayormente en grupos femeninos, haciendo que los grupos femeninos de dicha agencia tengan éxito, como lo es el grupo "Twice", se debe aclarar que esta es una agencia coreana, pero en este caso quiere debutar un grupo solo con japonesas ya que es el mercado donde se espara dará mayor impacto, se espera que debutará en el próximo año o a inicios del 2020.
+</p><br>
+<br>
+
+<img src="C:\Users\Estudiante\Desktop\Best culture\jyp.png" width="400" id="imagenflotante"><br>
+<br>
+
+<h3>
+    4.Twice regresará con un nuevo comeback:
+</h3>
+<br>
+<p>
+    Volvemos con la JYP ya que esta agencia anunció el regreso de el grupo Twice luego de su tour por Asia Oriental haciendo el tour "Twiceland", para voler con un comeback este 5 de noviembre, cuya canción no se ha anunciado su nombre.
+</p><br>
+<br>
+<img src="C:\Users\Estudiante\Desktop\Best culture\las twices.jpg" width="400" id="imagenflotante"><br>
+<br>
+<h3>
+    5. BTS en el cine:
+</h3>
+<br>
+<p>
+    BTS estará en los cines de diversos países, pero no es una película de la que todos esperan, si no una película de su tour Love Myself, mostrando detrás de cámaras nunca vistos por l@s A.R.M.Y.S.
+</p><br>
+<br>
+<img src="C:\Users\Estudiante\Desktop\Best culture\foto.jpg" width="400" id="imagenflotante"><br>
+<br>
+<br>
+ <section id="blog">
+                <h3>Idols femeninas más hermosas del kpop:</h3>
+                <div class="contenedor">
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\tzuyu.jpg" >
+                        <h4>Tzuyu<br>
+						</h4>
+                    </article>
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\Momo.jpg">
+                           <h4>Momo
+						   </h4>
+                    </article>
+                    <article>
+                       <img src="C:\Users\Estudiante\Desktop\Best culture\heejin.jpg" >
+                        <h4>Heejin
+						</h4>
+                    </article>
+					<article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\jennie.jpg">
+					<h4>Jennie
+					</h4>
+					</article>
+					<article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\Yura.jpg">
+					<h4>Yura
+					</h4>
+					</article>
+					<article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\rose.jpg">
+					<h4>Rose<br>
+			        </article>
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\sana1.jpg">
+                        <h4>Sana
+                        </h4>
+                        </article>
+                    <article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\lisa2.jpg">
+					<h4>Lisa
+					</h4>
+					</article>
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\hani.jpg">
+                        <h4>Hani
+                        </h4>
+                    </article>
+                        <article>
+                            <img src="C:\Users\Estudiante\Desktop\Best culture\irene3.jpg">
+                            <h4>Irene
+                            </h4>
+
+
+
+                </div>
+            </section>
+
+            <section id="blog">
+                <h3>Idols masculinos más hermosos del kpop:</h3>
+                <div class="contenedor">
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\chan.jpg" >
+                        <h4>Chanyeol<br>
+						</h4>
+                    </article>
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\jack.jpg">
+                           <h4>Jackson
+						   </h4>
+                    </article>
+                    <article>
+                       <img src="C:\Users\Estudiante\Desktop\Best culture\jay1.jpg" >
+                        <h4>Jaypark
+						</h4>
+                    </article>
+					<article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\jimiin.jpg">
+					<h4>Jimin
+					</h4>
+					</article>
+					<article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\jon1.jpg">
+					<h4>Jonghyun
+					</h4>
+					</article>
+					<article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\jungkook.jpg">
+					<h4>Jungkook<br>
+			        </article>
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\ju3.jpg">
+                        <h4>Junho
+                        </h4>
+                        </article>
+                    <article>
+					<img src="C:\Users\Estudiante\Desktop\Best culture\se.jpg">
+					<h4>Sehun
+					</h4>
+					</article>
+                    <article>
+                        <img src="C:\Users\Estudiante\Desktop\Best culture\tae1.jpg">
+                        <h4>Tae
+                        </h4>
+                    </article>
+                        <article>
+                            <img src="C:\Users\Estudiante\Desktop\Best culture\zico2.jpg">
+                            <h4>Zico
+                            </h4>
+
+
+
+                </div>
+            </section>
+
+
+	<h4>Created by: Rosse Camila De León y Michael Genao<h4>
+		          <div class="sociales">
+                    <a class="fontawesome-facebook-sign" href="https://www.facebook.com/Best-culture-1882030031913670/?modal=admin_todo_tour"></a>
+                    <a class="fontawesome-twitter" href="https://twitter.com/?lang=en"></a>
+                    <a class="fontawesome-camera-retro" href="https://www.instagram.com/best_culture/?hl=es-la"></a>
+                </div>
+</body>
+</html>

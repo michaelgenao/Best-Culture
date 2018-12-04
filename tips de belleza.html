@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+   
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+    color: #D46A6A
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+
+.copy {
+    font-size: 20px;
+}
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.sociales a {
+    color: #AA3939;
+    text-decoration: none;
+}
+
+@media (min-width:768px) { 
+    .sociales {
+        width: auto;
+    }
+    
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1000px;
+    }
+}
+
+
+#blog h3, h4 {
+    text-align: center;
+}
+
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #D46A6A
+}
+
+#blog article {
+    margin: 15px;
+}
+
+#blog img {
+    width: 100%;
+    max-width: 280px;
+}
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height:100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #0B1218;
+}
+
+#banner h2 {
+    font-size: 28px;
+   color: #0B1218
+}
+
+#banner a {
+    display: block;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border: 3px solid #fff;
+}
+
+#banner a:hover {
+    background:#AA3939;
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px;
+    }
+    
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) { 
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    #banner img {
+        height: auto;
+        margin-top: relative;
+		
+    }
+}
+
+@media (min-width:1024px) { 
+    #banner img {
+        margin-top: -200px;
+    }
+}
+
+#info {
+    background: #333;
+    color: #D46A6A;
+    text-align: center;
+    padding: 20px;
+}
+
+#info .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-show {
+    margin: 20px;
+}
+
+.info-show img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+   
+}
+
+@media (min-width:480px) {
+    .info-pet {
+        width: 40%;
+    }
+}
+
+@media (min-width:1024px) {
+    .info-pet {
+        width: auto;
+    }
+}
+#menu-bar {
+    display: none;
+    color: #D46A6A
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+   color: #D46A6A
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+    background: rgba(black);
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+		color:#AA3939
+    }
+    
+    .menu a {
+        border: none;
+    }
+    
+    header label { 
+        display: none;
+    }
+}
+#imagenflotante{
+margin:10px auto;
+display:block;
+}
+}
+</style>
+<body>
+		<header>
+   <div class="contenedor">
+        <h1 class="texto">Tips de belleza</h1>
+        <input type="checkbox" id="menu-bar">
+        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                <nav class="menu">
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/best%20culture.html">Inicio</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/farandula.html">Farándula</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/moda.html">Moda</a>
+                    <a href="file:///C:/Users/Estudiante/Desktop/Best culture/Noticias.html">Noticias</a>
+                </nav>
+            </div>
+</header><br>
+        <br>
+   <br>
+<br>
+<p>La estadística de la belleza en Corea en una de las más extrictas, ya que los surcoreanos tienen medidas para cada parte del cuerpo y a aquellas personas
+que cumplan con estas son consideradas como "perfectas" y esto no es solo en las mujeres, si no también en los hombres, ya que los mismo tambien cuidan de
+su aparencia, muchas personas llegan hasta acudir a las cirugías estéticas para lograr esto, una de las cirugías más famosas es la de parpados, para hacer
+que los ojos se vean más grandes y haciendo la linea que se considera bonita, creando así el doble parpado, además hay bastantes personas que hacen 
+dietas bastantes extremas para adelgazar, pero por suerte hay bastante trucos de belleza bastante útiles, desde conseguir esa piel brillante asiatica
+hasta conseguir una figura esbelta, les presentaremos los trucos o tips de bellezas más conocidos.</p>
+<br>
+<p>
+<strong> Hay una rutina específica a seguir para conseguir dicha piel y dicho cuerpo, que son las siguientes:</strong>
+</p><br>
+<br>
+<h3>Limpiarse el rostro</h3>   <br>
+
+<img src="C:\Users\Estudiante\Desktop\Best culture\tips.jpg" width="400" id="imagenflotante">
+
+<br>
+<p>Se limpian el rostro para eliminar las impurezas y de esta manera mantener el rostro fresco durante la mayor parte del día, además es bueno limpiarse el 
+rostro antes de aplicar cualquier tipo de crema.
+</p><br>
+<br>
+<h3>Se protegen del sol a conciencia.</h3><br>
+<img src="C:\Users\Estudiante\Desktop\Best culture\sol.jpg" width="400" id="imagenflotante">
+<br>
+<p>Utilizan mucho ptotector solar y tratan de exponerse lo menos posible al sol, en caso de tener que hacerlo utililizan sombreros y paraguas para protegerse
+y evitar cualquier tipo de pigmentación en su piel , <em>el sol posee vitamina D esta es buena para evitar el cáncer de piel, por eso utilizan cremas con dicha vitamina
+para sustituir el sol.</em></p><br>
+<br>
+
+
+<ul>
+    </h3><li>Desmaquillante o aceite limpiador</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\desmaquillante.jpg" width="400" id="imagenflotante">
+    <li>Exfoliante</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\exfo.jpg" width="400" id="imagenflotante">
+    <li>Ampollas y serums</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\ampo.jpg" width="400" id="imagenflotante">
+    <li>Mascarillas</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\masca.jpg" width="400" id="imagenflotante">
+    <li>Contorno de ojos</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\contorno.jpg" width="400" id="imagenflotante">
+    <li>Crema hidratante</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\hidra.jpg" width="400" id="imagenflotante">
+    <li>Protección solar</li>
+    <img src="C:\Users\Estudiante\Desktop\Best culture\pro.jpg" width="400" id="imagenflotante">
+
+</ul>
+
+<br>
+
+<p>Usan polvos matificantes, toman alimentos anti-oxidantes, usan remedios naturales(mejor), no piensan en la edad al elegir un producto,<br>
+siempre combinan marcas de maquillajes y no se quedan usando una sola.</p><br>
+<br>
+	<h4>Created by: Rosse Camila De León y Michael Genao<h4>
+		          <div class="sociales">
+                    <a class="fontawesome-facebook-sign" href="https://www.facebook.com/Best-culture-1882030031913670/?modal=admin_todo_tour"></a>
+                    <a class="fontawesome-twitter" href="https://twitter.com/?lang=en"></a>
+                    <a class="fontawesome-camera-retro" href="https://www.instagram.com/best_culture/?hl=es-la"></a>
+                </div>
+				</body>
+</html>
